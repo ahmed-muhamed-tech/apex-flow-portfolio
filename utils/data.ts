@@ -80,3 +80,18 @@ export const socialMedia = [
     href: "https://github.com/ahmed-muhamed-tech",
   },
 ];
+
+export const navbarLinks = [
+  {
+    label: "Home",
+    href: "home",
+  },
+  {
+    label: "Projects",
+    href: "projects",
+  },
+  {
+    label: "About",
+    href: "about",
+  },
+];

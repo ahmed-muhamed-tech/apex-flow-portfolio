@@ -1,7 +1,7 @@
 
 export default function Hero() {
   return (
-    <div className="h-dvh relative w-full bg-background">
+    <div id="home" className="h-dvh relative w-full bg-background">
       <div className="bg-primary w-96 h-96 absolute rounded-full top-30 left-30 opacity-35"></div>
       <div className="bg-surface w-120 h-120 absolute rounded-full bottom-30 right-30 opacity-50"></div>
       <div className="w-full h-full backdrop-blur-2xl">

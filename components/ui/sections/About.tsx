@@ -6,7 +6,10 @@ import HeadSection from "../HeadSection";
 
 export default function About() {
   return (
-    <div className="min-h-dvh w-full bg-background py-12">
+    <div
+      id="about"
+      className="scroll-mt-12 lg:scroll-mt-24 min-h-dvh w-full bg-background py-12"
+    >
       <div className="container mx-auto h-full flex justify-center items-center">
         <div className="w-full">
           <HeadSection text="About Me" />

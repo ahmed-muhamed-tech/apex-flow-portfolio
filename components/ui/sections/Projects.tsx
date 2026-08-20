@@ -4,11 +4,11 @@ import Button from "../Button";
 
 export default function Projects() {
   return (
-    <div className="min-h-dvh w-full bg-background py-12">
+    <div id="projects" className="scroll-mt-12 lg:scroll-mt-24  min-h-dvh w-full bg-background py-12">
       <div className="container mx-auto h-full flex justify-center items-center">
         <div className="w-full">
           <HeadSection text="Projects" />
-          <div className="grid grid-cols-4 grid-rows-8 h-200 gap-4">
+          <div className="grid grid-cols-1 lg:grid-cols-4 lg:grid-rows-8 lg:h-200 gap-4">
             <div className="col-span-2 row-span-4 flex flex-col justify-between bg-surface rounded-2xl p-6">
               <div>
                 <h4 className="text-2xl font-semibold text-foreground uppercase">
@@ -20,9 +20,8 @@ export default function Projects() {
                   Cumque praesentium excepturi soluta, fuga voluptatibus sequi!
                   NostrumLorem ipsum dolor sit amet consectetur adipisicing
                   elit. Cumque praesentium excepturi soluta, fuga voluptatibus
-                  sequi! Nostrum
-                   Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit. Cumque praesentium excepturi...
+                  sequi! Nostrum Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Cumque praesentium excepturi...
                 </p>
 
                 <div className="grid grid-cols-6 mt-4">
@@ -68,9 +67,8 @@ export default function Projects() {
                   Cumque praesentium excepturi soluta, fuga voluptatibus sequi!
                   NostrumLorem ipsum dolor sit amet consectetur adipisicing
                   elit. Cumque praesentium excepturi soluta, fuga voluptatibus
-                  sequi! Nostrum
-                   Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit. Cumque praesentium excepturi...
+                  sequi! Nostrum Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Cumque praesentium excepturi...
                 </p>
 
                 <div className="grid grid-cols-6 mt-4">
@@ -116,9 +114,8 @@ export default function Projects() {
                   Cumque praesentium excepturi soluta, fuga voluptatibus sequi!
                   NostrumLorem ipsum dolor sit amet consectetur adipisicing
                   elit. Cumque praesentium excepturi soluta, fuga voluptatibus
-                  sequi! Nostrum
-                   Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit. Cumque praesentium excepturi...
+                  sequi! Nostrum Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Cumque praesentium excepturi...
                 </p>
 
                 <div className="grid grid-cols-6 mt-4">
@@ -153,7 +150,7 @@ export default function Projects() {
               </div>
             </div>
 
-
+            
             <div className="col-span-2 row-span-4 flex flex-col justify-between bg-surface rounded-2xl p-6">
               <div>
                 <h4 className="text-2xl font-semibold text-foreground uppercase">
@@ -165,9 +162,8 @@ export default function Projects() {
                   Cumque praesentium excepturi soluta, fuga voluptatibus sequi!
                   NostrumLorem ipsum dolor sit amet consectetur adipisicing
                   elit. Cumque praesentium excepturi soluta, fuga voluptatibus
-                  sequi! Nostrum
-                   Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit. Cumque praesentium excepturi...
+                  sequi! Nostrum Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Cumque praesentium excepturi...
                 </p>
 
                 <div className="grid grid-cols-6 mt-4">

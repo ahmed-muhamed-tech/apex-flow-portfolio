@@ -68,6 +68,10 @@
   --color-shadow-primary-lg: 0 15px 35px -5px rgba(99, 102, 241, 0.40);
 }
 
+html{
+   scroll-behavior: smooth;
+}
+
 button {
   cursor: pointer;
 }
