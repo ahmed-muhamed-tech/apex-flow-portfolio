@@ -12,8 +12,8 @@ export default function Navbar() {
   const changeStateNav = () => setIsOpenNav(!isOpenNav);
 
   return (
-    <nav className="fixed left-0 right-0 w-full z-50 backdrop-blur-xl rounded-2xl border border-border shadow shadow-shadow-primary bg-surface/40">
-      <div className="container mx-auto py-4 flex items-center justify-between">
+    <nav className="fixed left-0 right-0 lg:top-4 w-full z-50  shadow shadow-shadow-primary">
+      <div className="container mx-auto py-4 flex items-center justify-between  border border-border backdrop-blur-xl rounded-2xl  bg-surface/40">
         {/* LOGO */}
         <Logo />
 
