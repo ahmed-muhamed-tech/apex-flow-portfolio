@@ -1,6 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Inter, Syne } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/layout/Navbar";
+
+import { ReactLenis } from "@/utils/lenis";
+
+// 1. إعداد الخطوط
+const inter = Inter({ subsets: ["latin"] });
+
+const syne = Syne({
+  subsets: ["latin"],
+  variable: "--font-syne",
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,9 +32,15 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      /* ضفنا syne.variable هنا */
+      className={`overflow-y-auto scrollbar-none  ${geistSans.variable} ${geistMono.variable} ${syne.variable} ${inter.className} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <ReactLenis root>
+        <body className="min-h-full">
+          <Navbar />
+          {children}
+        </body>
+      </ReactLenis>
     </html>
   );
 }

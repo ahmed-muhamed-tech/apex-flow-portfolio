@@ -1,26 +1,78 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --font-syne: var(--font-syne);
+  
+  /* =========================
+     BACKGROUND
+     ========================= */
+
+  /* خلفية الموقع الأساسية */
+  --color-background: #0a0a0b;
+
+  /* خلفية الكروت الأساسية */
+  --color-surface: #0c0c0d;
+
+  /* كروت بارزة / Hover */
+  --color-surface-elevated: #111113;
+
+  /* =========================
+     NESTED CARDS (كارد داخل كارد)
+     ========================= */
+
+  /* خلفية كارت داخل كارد آخر (أفتح بوضوح للتمييز) */
+  --color-surface-nested: #161619;
+
+  /* Hover للكارت الداخلي */
+  --color-surface-nested-hover: #1c1c20;
+
+  /* =========================
+     BORDER
+     ========================= */
+
+  --color-border: #18181b;
+
+  /* =========================
+     TEXT
+     ========================= */
+
+  --color-foreground: #f5f5f7;
+  --color-muted: #8a8a90;
+
+  /* =========================
+     PRIMARY — INDIGO
+     ========================= */
+
+  --color-primary: #6366f1;
+  --color-primary-hover: #5b5fef;
+
+  /* =========================
+     ACCENT — AMBER
+     ========================= */
+
+  --color-accent: #f5c542;
+  --color-accent-hover: #fbbe3c;
+
+  /* =========================
+     SHADOWS (تقوية الظلال للظهور على Dark Theme)
+     ========================= */
+
+  /* ظل داكن قوي وبارز للكروت */
+  --color-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.85);
+
+  /* ظل أعمق للعناصر المرتفعة */
+  --color-shadow-lg: 0 20px 40px -15px rgba(0, 0, 0, 0.95);
+
+  /* ظلال إضاءة (Glow) بلون البراند لتعزز البروز عند الحجم الداكن */
+  --color-shadow-primary: 0 10px 25px -5px rgba(99, 102, 241, 0.25);
+  --color-shadow-primary-lg: 0 15px 35px -5px rgba(99, 102, 241, 0.40);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+button {
+  cursor: pointer;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.container{
+   padding-inline: 12px;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
