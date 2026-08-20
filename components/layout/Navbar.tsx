@@ -26,9 +26,9 @@ export default function Navbar() {
             className="absolute right-2 top-2 text-xl z-50 text-foreground bg-surface/40 cursor-pointer w-12 h-12 flex justify-center items-center rounded-full"
           />
 
-          {navbarLinks.map(({ label, href }) => (
+          {navbarLinks.map(({ label, href, id }) => (
             <Link
-              key={label}
+              key={id}
               href={`#${href}`}
               onClick={changeStateNav}
               className="py-1 px-2 rounded-md relative group"
@@ -42,9 +42,9 @@ export default function Navbar() {
         <div
           className={`hidden lg:relative lg:flex lg:flex-row items-center gap-8 lg:bg-surface border border-border rounded-2xl justify-between py-2 px-4`}
         >
-          {navbarLinks.map(({ label, href }) => (
+          {navbarLinks.map(({ label, href, id }) => (
             <Link
-              key={label}
+              key={id}
               href={`#${href}`}
               className="py-1 px-2 rounded-md relative group"
             >

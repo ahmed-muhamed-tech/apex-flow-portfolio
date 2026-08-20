@@ -93,11 +93,11 @@ export default function Footer() {
             </h3>
 
             <ul className="mt-5 space-y-3">
-              {socialMedia.map(({ title, href, icon }) => {
+              {socialMedia.map(({ title, href, icon, id }) => {
                 const Icon = icon;
 
                 return (
-                  <li key={title}>
+                  <li key={id}>
                     <a
                       href={href}
                       target="_blank"

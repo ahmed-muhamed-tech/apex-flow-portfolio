@@ -11,10 +11,10 @@ export default function SocialMedia() {
       </h3>
 
       <div className="grid grid-cols-2 gap-2 mt-6 flex-1">
-        {socialMedia.map(({ title, href, icon }, index) => (
+        {socialMedia.map(({ title, href, icon, id }) => (
           <Link
           target="_black"
-            key={index}
+            key={id}
             href={href}
             className="bg-surface border border-border hover:bg-surface-elevated transition-all duration-200 group flex justify-center items-center p-4 rounded-2xl"
           >

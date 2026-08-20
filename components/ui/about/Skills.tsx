@@ -1,7 +1,6 @@
 import { skills } from "@/utils/data";
 import Image from "next/image";
 
-
 export default function Skills() {
   const widthAndHightIcons = 40;
   return (
@@ -11,9 +10,9 @@ export default function Skills() {
       </h3>
 
       <div className="grid grid-cols-6 gap-2 mt-6">
-        {skills.map(({ title, icon }, index) => (
+        {skills.map(({ title, icon, id }) => (
           <div
-            key={index}
+            key={id}
             className="bg-surface border border-border flex justify-center items-center p-4 rounded-2xl"
           >
             <Image
