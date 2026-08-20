@@ -185,7 +185,7 @@ export default function Projects() {
                   className="col-span-2 row-span-4 flex flex-col justify-between bg-surface rounded-2xl p-6"
                 >
                   <div>
-                    <h4 className="text-xl lg:text-2xl xl:text-3xl font-semibold text-foreground uppercase">
+                    <h4 className="text-xl  lg:text-2xl xl:text-3xl font-semibold text-foreground uppercase">
                       {title}
                     </h4>
 
@@ -193,14 +193,14 @@ export default function Projects() {
                       {subTitle}...
                     </p>
 
-                    <div className="grid grid-cols-2 w-fit lg:grid-cols-6 my-4 gap-2">
+                    <div className="flex flex-wrap mt-4 mb-8 gap-2 lg:gap-4">
                       {skills.map((skill) => (
-                        <div
+                        <h4
                           key={skill}
-                          className="uppercase min-w-25 lg:min-w-30 text-center text-xs lg:text-sm w-fit py-1 px-2  lg:py-2 lg:px-4 bg-surface-nested rounded-xl lg:rounded-2xl border border-border text-foreground"
+                          className="uppercase text-xs lg:text-sm py-1 px-2 lg:py-2 lg:px-4 bg-surface-nested/50 rounded-xl lg:rounded-2xl border border-border text-foreground"
                         >
                           {skill}
-                        </div>
+                        </h4>
                       ))}
                     </div>
                   </div>
