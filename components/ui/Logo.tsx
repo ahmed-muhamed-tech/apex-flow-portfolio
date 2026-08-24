@@ -1,11 +1,11 @@
 import Link from "next/link";
 
-export default function Logo() {
+export default function Logo({textSize}: {textSize?: string}) {
   return (
     
       <Link
         href="/"
-        className="text-lg lg:text-2xl font-bold  uppercase tracking-wide"
+        className={`${textSize ? textSize : "text-lg lg:text-2xl"} font-bold  uppercase tracking-wide`}
       >
         <h2>
           <span className="text-foreground">

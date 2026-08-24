@@ -33,10 +33,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="en"
       /* ضفنا syne.variable هنا */
-      className={`overflow-y-auto scrollbar-none  ${geistSans.variable} ${geistMono.variable} ${syne.variable} ${inter.className} h-full antialiased`}
+      className={` scrollbar-none  ${geistSans.variable} ${geistMono.variable} ${syne.variable} ${inter.className} antialiased`}
     >
       <ReactLenis root>
-        <body className="min-h-full">
+        <body>
           <Navbar />
           {children}
         </body>

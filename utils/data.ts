@@ -130,7 +130,7 @@ export const projects = [
     skills: ["supabase", "next js", "tailwind", "postgress"],
     view: "",
     code: "",
-    details: "",
+    details: "/detailsProject/1",
   },
 
   {
@@ -257,7 +257,7 @@ export const projects = [
     skills: ["supabase", "next js", "tailwind", "postgress"],
     view: "",
     code: "",
-    details: "",
+    details: "/",
   },
   {
     id: uuidv4(),

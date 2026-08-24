@@ -5,6 +5,8 @@ import Button from "@/components/ui/Button";
 import Logo from "../ui/Logo";
 import { navbarLinks } from "@/utils/data";
 import { IoMdClose } from "react-icons/io";
+import { motion } from "motion/react";
+import { duration } from "@/utils/animation";
 
 export default function Navbar() {
   const [isOpenNav, setIsOpenNav] = useState(false);
@@ -12,7 +14,12 @@ export default function Navbar() {
   const changeStateNav = () => setIsOpenNav(!isOpenNav);
 
   return (
-    <nav className="fixed left-0 right-0 lg:top-4 w-full z-50  shadow shadow-shadow-primary">
+    <motion.nav
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: duration, delay: duration }}
+      className="fixed left-0 right-0 lg:top-4 w-full z-50  shadow shadow-shadow-primary"
+    >
       <div className="container mx-auto py-4 flex items-center justify-between  border border-border backdrop-blur-xl rounded-2xl  bg-surface/40">
         {/* LOGO */}
         <Logo />
@@ -71,6 +78,6 @@ export default function Navbar() {
           </button>
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 }

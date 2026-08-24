@@ -19,7 +19,7 @@ export default function CardProject({
   details,
 }: CardProjectProps) {
   return (
-    <div className="col-span-2 row-span-4 flex flex-col justify-between bg-surface rounded-2xl p-6">
+    <>
       <div>
         <h4 className="text-xl  lg:text-2xl xl:text-3xl font-semibold text-foreground uppercase">
           {title}
@@ -55,6 +55,6 @@ export default function CardProject({
           <Button text="Details" background="bg-primary" />
         </Link>
       </div>
-    </div>
+    </>
   );
 }

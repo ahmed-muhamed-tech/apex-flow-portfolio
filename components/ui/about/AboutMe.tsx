@@ -1,4 +1,6 @@
+import { duration } from "@/utils/animation";
 import { aboutMe } from "@/utils/data";
+import { motion } from "motion/react";
 
 export default function AboutMe() {
   return (
@@ -9,12 +11,29 @@ export default function AboutMe() {
 
       <div className="text-sm xl:text-lg text-foreground mt-6 leading-7 flex flex-col gap-2">
         {aboutMe.map((about, index) => (
-          <h4
+          <motion.h4
             key={index}
+            initial={{
+              opacity: 0,
+              y: 30,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            viewport={{
+              once: true,
+              amount: 0.2,
+            }}
+            transition={{
+              duration: 0.6,
+              delay: index * 0.15,
+              ease: [0.22, 1, 0.36, 1],
+            }}
             className="border border-border rounded-md py-4 px-4 bg-surface hover:bg-surface-elevated hover:ml-4 transition-all duration-200"
           >
             {about}
-          </h4>
+          </motion.h4>
         ))}
       </div>
     </div>

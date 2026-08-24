@@ -1,30 +1,77 @@
+import { duration } from "@/utils/animation";
+import { motion } from "motion/react";
 
 export default function Hero() {
   return (
-    <div id="home" className="h-dvh relative w-full bg-background">
-      <div className="bg-primary w-96 h-96 absolute rounded-full top-30 left-30 opacity-35"></div>
-      <div className="bg-surface w-120 h-120 absolute rounded-full bottom-30 right-30 opacity-50"></div>
+    <div
+      id="home"
+      className="h-dvh relative w-full bg-background overflow-hidden"
+    >
+      <div className="bg-primary w-44 h-44 lg:w-96 lg:h-96 absolute rounded-full top-30 left-30 opacity-35" />
+
+      <div className="bg-surface w-44 h-44 lg:w-96 lg:h-96 absolute rounded-full bottom-30 right-30 opacity-50" />
+
       <div className="w-full h-full backdrop-blur-2xl">
-        <div className="constainer mx-auto flex justify-center items-center h-full relative">
+        <div className="container mx-auto flex justify-center items-center h-full relative">
           <div className="text-center">
-            <h2 className="uppercase font-bold text-lg lg:text-2xl text-primary font-syne">
-              Web Deleveper
-            </h2>
-            <h1 className="uppercase  text-foreground font-bold text-4xl lg:text-6xl">
+            {/* Small Title */}
+            <motion.h2
+              initial={{ y: -30, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{
+                duration: duration,
+                ease: [0.22, 1, 0.36, 1],
+              }}
+              className="uppercase font-bold text-lg lg:text-2xl text-primary font-syne"
+            >
+              Web Developer
+            </motion.h2>
+
+            {/* Name */}
+            <motion.h1
+              initial={{ y: 30, opacity: 0, scale: 0.95 }}
+              animate={{ y: 0, opacity: 1, scale: 1 }}
+              transition={{
+                duration: duration,
+                delay: 0.15,
+                ease: [0.22, 1, 0.36, 1],
+              }}
+              className="uppercase text-foreground font-bold text-4xl lg:text-6xl"
+            >
               Ahmed Mohamed
-            </h1>
-            <p className="w-[95%] mx-auto md:w-[70%] lg:w-[60%] xl:w-[50%] leading-6 lg:leading-7 text-sm lg:text-lg text-muted mt-2">
+            </motion.h1>
+
+            {/* Description */}
+            <motion.p
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{
+                duration: duration,
+                delay: 0.3,
+                ease: [0.22, 1, 0.36, 1],
+              }}
+              className="w-[95%] mx-auto md:w-[70%] lg:w-[60%] xl:w-[50%] leading-6 lg:leading-7 text-sm lg:text-lg text-muted mt-2"
+            >
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Molestiae expedita non voluptates alias maxime. Voluptate nam,
               dolores quam culpa modi nesciunt iure!
-            </p>
+            </motion.p>
 
-            <div className="flex items-center gap-4 mt-8 mx-auto w-fit">
-             
+            {/* Button */}
+            <motion.div
+              initial={{ y: 30, opacity: 0, scale: 0.9 }}
+              animate={{ y: 0, opacity: 1, scale: 1 }}
+              transition={{
+                duration: duration,
+                delay: 0.45,
+                ease: [0.22, 1, 0.36, 1],
+              }}
+              className="flex items-center gap-4 mt-8 mx-auto w-fit"
+            >
               <button className="bg-surface shadow-2xl shadow-shadow-lg border border-border hover:bg-surface-elevated transition-all duration-200 text-foreground font-semibold py-2 px-4 rounded-md">
                 Contact
               </button>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
