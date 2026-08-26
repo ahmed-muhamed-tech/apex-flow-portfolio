@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter, Syne } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/layout/Navbar";
-
 import { ReactLenis } from "@/utils/lenis";
+import ClientLayout from "@/components/layout/ClientLayout";
 
 // 1. إعداد الخطوط
 const inter = Inter({ subsets: ["latin"] });
@@ -37,8 +36,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <ReactLenis root>
         <body>
-          <Navbar />
-          {children}
+          <ClientLayout>{children}</ClientLayout>
         </body>
       </ReactLenis>
     </html>

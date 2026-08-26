@@ -17,7 +17,7 @@ export default function SocialMedia() {
             target="_black"
             key={id}
             href={href}
-            className="bg-surface border border-border hover:bg-surface-elevated transition-all duration-200 group flex justify-center items-center p-4 rounded-2xl"
+            className="bg-surface-nested border shadow shadow-shadow border-border hover:bg-surface-nested-hover transition-all duration-200 group flex justify-center items-center p-4 rounded-2xl"
           >
             <motion.div
                initial={{

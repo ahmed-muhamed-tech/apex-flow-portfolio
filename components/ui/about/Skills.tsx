@@ -14,7 +14,7 @@ export default function Skills() {
         {skills.map(({ title, icon, id }, index) => (
           <div
             key={id}
-            className="bg-surface border border-border flex justify-center items-center p-4 rounded-2xl"
+            className="bg-surface-nested border border-border flex justify-center items-center p-4 rounded-2xl"
           >
             <motion.div
               initial={{

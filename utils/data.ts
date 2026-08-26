@@ -1,4 +1,4 @@
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from "uuid";
 
 export const skills = [
   {
@@ -64,12 +64,10 @@ export const skills = [
 ];
 
 export const aboutMe = [
-  "Building modern web experiences with React & Next.js.",
-  "Writing safer, predictable, and maintainable code.",
-  "Exploring APIs, databases, authentication, and scalable systems.",
-  "I care about structure, separation of concerns, and maintainability.",
-  "Currently deepening my backend and system design knowledge.",
-  "I learn by turning concepts into real projects.",
+  "I'm a Frontend Developer who builds real, working products with React and Next.js — not just static templates.",
+  "I focus on clean component structure, maintainable code, and interfaces that actually work the way they look.",
+  "Every project I take on gets the same attention to detail: from responsive layouts to smooth interactions, down to the smallest states.",
+  "I'm continuously expanding into backend and system design, so I can build complete features — not just the UI layer.",
 ];
 
 export const socialMedia = [
