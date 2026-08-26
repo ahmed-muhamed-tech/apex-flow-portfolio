@@ -1,9 +1,10 @@
 "use client";
 
-import NameAndDescription from "@/components/ui/ProjectDetails/NameAndDescription";
-import ProjectDetails from "@/components/ui/ProjectDetails/ProjectDetails";
-import TimeLineProject from "@/components/ui/ProjectDetails/TimeLineProject";
-import Tools from "@/components/ui/ProjectDetails/Tools";
+
+import NameAndDescription from "@/components/ui/detailsProject/NameAndDescription";
+import ProjectDetails from "@/components/ui/detailsProject/ProjectDetails";
+import TimeLineProject from "@/components/ui/detailsProject/TimeLineProject";
+import Tools from "@/components/ui/detailsProject/Tools";
 import Footer from "@/components/ui/sections/Footer";
 // import { use } from "react";
 
