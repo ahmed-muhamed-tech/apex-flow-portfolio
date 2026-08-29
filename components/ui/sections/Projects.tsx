@@ -13,7 +13,7 @@ export default function Projects() {
   return (
     <div
       id="projects"
-      className="scroll-mt-12 lg:scroll-mt-24  min-h-dvh w-full bg-background py-12"
+      className="scroll-mt-12 lg:scroll-mt-24 w-full bg-background py-12"
     >
       <div className="container mx-auto h-full flex justify-center items-center">
         <div className="w-full">

@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     siteName: "Apex-Flow",
     images: [
       {
-        url: "https://apex-flow-portfolio.vercel.app/og-image.png",
+        url: "https://apex-flow-portfolio.vercel.app/coverPhoto.jpeg",
         width: 1200,
         height: 630,
       },
