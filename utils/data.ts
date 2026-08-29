@@ -108,11 +108,11 @@ export const navbarLinks = [
     label: "Projects",
     href: "projects",
   },
-  // {
-  //   id: uuidv4(),
-  //   label: "Services",
-  //   href: "services",
-  // },
+  {
+    id: uuidv4(),
+    label: "Services",
+    href: "services",
+  },
   {
     id: uuidv4(),
     label: "About",
