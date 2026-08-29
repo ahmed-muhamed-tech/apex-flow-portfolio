@@ -1,37 +1,7 @@
 "use client";
 
-import Link from "next/link";
-import { ArrowUpRight, Mail, MessageCircle, ArrowUp } from "lucide-react";
-
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { ArrowUpRight, Mail, ArrowUp } from "lucide-react";
 import Logo from "../Logo";
-import { socialMedia } from "@/utils/data";
-import Image from "next/image";
-
-const navigationLinks = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Projects", href: "#projects" },
-  { label: "Contact", href: "#contact" },
-];
-
-const socialLinks = [
-  {
-    label: "GitHub",
-    href: "https://github.com/yourusername",
-    icon: FaGithub,
-  },
-  {
-    label: "LinkedIn",
-    href: "https://linkedin.com/in/yourusername",
-    icon: FaLinkedinIn,
-  },
-  {
-    label: "WhatsApp",
-    href: "https://wa.me/201013681500",
-    icon: MessageCircle,
-  },
-];
 
 export default function Footer({
   isHomePage = false,
@@ -74,7 +44,8 @@ export default function Footer({
       
 
         {/* CTA */}
-        <div className={`${isHomePage && "mt-16"} overflow-hidden rounded-2xl border border-border bg-surface`}>
+        <div className=
+        "mt-16 overflow-hidden rounded-2xl border border-border bg-surface">
           <div className="flex flex-col gap-6 p-6 sm:p-8 md:flex-row md:items-center md:justify-between">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
