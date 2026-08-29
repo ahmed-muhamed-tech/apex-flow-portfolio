@@ -1,42 +1,9 @@
-import {
-  ArrowUpRight,
-  CalendarDays,
-  Clock3,
-  Code2,
-  ExternalLink,
-  
-  MessageCircle,
-  UserRound,
-} from "lucide-react";
-
-const projectDetails = [
-  {
-    label: "Status",
-    value: "Completed",
-  },
-  {
-    label: "Started",
-    value: "January 2026",
-  },
-  {
-    label: "Completed",
-    value: "February 2026",
-  },
-  {
-    label: "Duration",
-    value: "4 Weeks",
-  },
-  {
-    label: "Project Type",
-    value: "Personal",
-  },
-  {
-    label: "Role",
-    value: "Full Stack",
-  },
-];
-
-export default function ProjectDetails() {
+import { ArrowUpRight, Code2, ExternalLink, MessageCircle } from "lucide-react";
+type ProjectDetails = {
+  label: string;
+  value: string;
+};
+export default function ProjectDetails({ projectDetails, code, view }: {projectDetails:ProjectDetails[], code: string, view: string}) {
   return (
     <aside>
       <div className="sticky top-24 rounded-2xl border border-border bg-surface p-5 shadow-shadow lg:p-6">
@@ -75,7 +42,7 @@ export default function ProjectDetails() {
 
           <div className="mt-3 flex flex-col gap-2">
             <a
-              href="https://example.com"
+              href="https://beetelketabaalfayuwm-1c952.web.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center justify-between rounded-xl border border-border bg-surface-nested px-4 py-3 text-sm text-foreground transition-all duration-200 hover:border-primary/50 hover:bg-surface-elevated"
@@ -89,7 +56,7 @@ export default function ProjectDetails() {
             </a>
 
             <a
-              href="https://github.com"
+              href="https://github.com/ahmed-muhamed-tech/bookstore"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center justify-between rounded-xl border border-border bg-surface-nested px-4 py-3 text-sm text-foreground transition-all duration-200 hover:border-primary/50 hover:bg-surface-elevated"

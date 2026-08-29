@@ -22,7 +22,7 @@ export default function Hero() {
                 duration: duration,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="uppercase font-bold text-lg lg:text-xl text-primary font-syne"
+              className="uppercase font-bold text-xs mg:text-lg lg:text-xl text-primary font-syne"
             >
               Frontend Developer — React & Next.js
             </motion.h2>

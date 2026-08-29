@@ -1,45 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 
-const timeline = [
-  {
-    id: 1,
-    title: "The Idea",
-    description:
-      "This is where the project started — defining the idea, its purpose, and what the final product should achieve.",
-  },
-  {
-    id: 2,
-    title: "The Challenge",
-    description:
-      "Identifying the main problem, understanding the requirements, and figuring out what needs to be solved.",
-  },
-  {
-    id: 3,
-    title: "The Approach",
-    description:
-      "Planning the structure, choosing the right technologies, and defining how the project will be built.",
-  },
-  {
-    id: 4,
-    title: "The Build",
-    description:
-      "Turning the plan into a working product by building the core features and connecting everything together.",
-  },
-  {
-    id: 5,
-    title: "The Refinement",
-    description:
-      "Testing the application, fixing issues, improving performance, and refining the overall experience.",
-  },
-  {
-    id: 6,
-    title: "The Result",
-    description:
-      "Bringing everything together into a complete product that solves the original problem and achieves its goals.",
-  },
-];
+type TimeLine = {
+  id: number;
+  title: string;
+  description: string;
+};
 
-export default function TimeLineProject() {
+export default function TimeLineProject({ timeline }: {timeline: TimeLine[]}) {
   const [activeStep, setActiveStep] = useState(1);
 
   const stepRefs = useRef<(HTMLDivElement | null)[]>([]);

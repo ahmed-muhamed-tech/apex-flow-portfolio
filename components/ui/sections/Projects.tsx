@@ -5,10 +5,11 @@ import { useState } from "react";
 import { projects } from "../../../utils/data";
 import CardProject from "../CardProject";
 import { motion } from "motion/react";
-import { duration } from "@/utils/animation";
+
 export default function Projects() {
   const [showMore, setShowMore] = useState(4);
   const viewProjects = projects.slice(0, showMore);
+
   return (
     <div
       id="projects"
@@ -26,7 +27,17 @@ export default function Projects() {
             } lg:h-${100 * (projects.length / 2)} gap-4`}
           >
             {viewProjects.map(
-              ({ title, subTitle, skills, view, code, details, id }, index) => (
+              (
+                {
+                  title,
+                  subTitle,
+                  tools,
+                  view,
+                  code,
+                  id,
+                },
+                index,
+              ) => (
                 <motion.div
                   key={id}
                   initial={{
@@ -51,12 +62,12 @@ export default function Projects() {
                   className="col-span-2 row-span-4 flex flex-col justify-between bg-surface rounded-2xl p-6"
                 >
                   <CardProject
+                    id={id}
                     title={title}
                     subTitle={subTitle}
-                    skills={skills}
+                    tools={tools}
                     view={view}
                     code={code}
-                    details={details}
                   />
                 </motion.div>
               ),

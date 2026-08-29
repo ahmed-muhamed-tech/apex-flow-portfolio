@@ -49,10 +49,10 @@ export default function Footer({
     <footer className="border-t border-border bg-background">
       <div className="mx-auto container px-6 py-16">
         {/* Top */}
-        {isHomePage && (
-          <div className="grid gap-12 lg:grid-cols-[1.5fr_1fr_1fr]">
+        
+          <div>
             {/* Brand */}
-            <div>
+            <div className="w-fit mx-auto text-center">
               <Logo />
 
               <p className="mt-5 max-w-sm text-sm leading-6 text-muted">
@@ -69,63 +69,9 @@ export default function Footer({
               </a>
             </div>
 
-            {/* Navigation */}
-            <div>
-              <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground">
-                Navigation
-              </h3>
-
-              <ul className="mt-5 space-y-3">
-                {navigationLinks.map(({ label, href }) => (
-                  <li key={label}>
-                    <Link
-                      href={href}
-                      className="group inline-flex items-center gap-1 text-sm text-muted transition-colors hover:text-foreground"
-                    >
-                      {label}
-
-                      <ArrowUpRight className="size-3 opacity-0 transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:opacity-100" />
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Social */}
-            <div>
-              <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground">
-                Connect
-              </h3>
-
-              <ul className="mt-5 space-y-3">
-                {socialMedia.map(({ title, href, icon, id }) => {
-                  const Icon = icon;
-
-                  return (
-                    <li key={id}>
-                      <a
-                        href={href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="group inline-flex items-center gap-3 text-sm text-muted transition-colors hover:text-foreground"
-                      >
-                        <Image
-                          src={icon}
-                          alt={title}
-                          width={15}
-                          height={15}
-                          className="group-hover:scale-110 transition-all duration-200"
-                        />
-                        {title}
-                        <ArrowUpRight className="size-3 opacity-0 transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:opacity-100" />
-                      </a>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
+           
           </div>
-        )}
+      
 
         {/* CTA */}
         <div className={`${isHomePage && "mt-16"} overflow-hidden rounded-2xl border border-border bg-surface`}>
