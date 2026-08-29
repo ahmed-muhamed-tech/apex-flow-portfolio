@@ -34,7 +34,7 @@ export default function CardProject({
           {tools.map((tool) => (
             <h4
               key={tool}
-              className="uppercase text-xs lg:text-sm py-1 px-2 lg:py-2 lg:px-4 bg-surface-nested/50 rounded-xl lg:rounded-2xl border border-border text-foreground"
+              className="uppercase text-xs lg:text-sm py-1 px-2 lg:py-2 lg:px-4 bg-surface-nested rounded-xl lg:rounded-2xl border border-border text-foreground"
             >
               {tool}
             </h4>

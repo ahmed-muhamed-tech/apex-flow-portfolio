@@ -27,17 +27,7 @@ export default function Projects() {
             } lg:h-${100 * (projects.length / 2)} gap-4`}
           >
             {viewProjects.map(
-              (
-                {
-                  title,
-                  subTitle,
-                  tools,
-                  view,
-                  code,
-                  id,
-                },
-                index,
-              ) => (
+              ({ title, subTitle, tools, view, code, id }, index) => (
                 <motion.div
                   key={id}
                   initial={{
