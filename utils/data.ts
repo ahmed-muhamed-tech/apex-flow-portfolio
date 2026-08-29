@@ -120,6 +120,40 @@ export const navbarLinks = [
   },
 ];
 
+export const services = [
+  {
+    id: "01",
+    title: "Clean Code",
+    description:
+      "Well-structured, readable, and maintainable code, with a clear project structure that makes future changes and development easier.",
+  },
+  {
+    id: "02",
+    title: "Scalable Architecture",
+    description:
+      "A scalable project architecture that allows new features to be added and the system to grow without requiring major restructuring.",
+  },
+  {
+    id: "03",
+    title: "Documentation",
+    description:
+      "Clear project documentation that explains the structure, how the project works, and the key parts developers need to understand for maintenance and future development.",
+  },
+  {
+    id: "04",
+    title: "Post-Launch Support",
+    description:
+      "Support after launch to handle technical issues and bugs that may arise, helping keep the project stable and running smoothly.",
+  },
+  {
+    id: "05",
+    title: "Performance Optimization",
+    description:
+      "Improving the website's performance and responsiveness by optimizing data loading, components, and unnecessary operations.",
+  },
+];
+
+
 export const projects = [
   {
     id: "1",

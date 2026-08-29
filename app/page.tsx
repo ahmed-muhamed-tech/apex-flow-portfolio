@@ -9,7 +9,7 @@ export default function Home() {
     <div className="relative bg-background ">
       <Hero />
       <Projects />
-      {/* <Services/> */}
+      <Services/>
       <About />
       <Footer isHomePage={true} />
     </div>

@@ -1,4 +1,4 @@
-import { duration } from "@/utils/animation";
+
 import { socialMedia } from "@/utils/data";
 import Image from "next/image";
 import Link from "next/link";
