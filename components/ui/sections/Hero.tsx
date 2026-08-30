@@ -7,9 +7,9 @@ export default function Hero() {
       id="home"
       className="h-dvh relative w-full bg-background overflow-hidden"
     >
-      <div className="bg-primary w-44 h-44 lg:w-96 lg:h-96 absolute rounded-full top-30 left-30 opacity-35" />
+      <div className="animate-pulse bg-primary w-44 h-44 lg:w-96 lg:h-96 absolute rounded-full top-30 left-30 opacity-35" />
 
-      <div className="bg-surface w-44 h-44 lg:w-96 lg:h-96 absolute rounded-full bottom-30 right-30 opacity-50" />
+      <div className="animate-pulse bg-surface w-44 h-44 lg:w-96 lg:h-96 absolute rounded-full bottom-30 right-30 opacity-50" />
 
       <div className="w-full h-full backdrop-blur-2xl">
         <div className="container mx-auto flex justify-center items-center h-full relative">

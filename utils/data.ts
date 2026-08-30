@@ -4,62 +4,62 @@ export const skills = [
   {
     id: uuidv4(),
     title: "Next.js",
-    icon: "https://thesvg.org/icons/nextjs/default.svg",
+    icon: "/icons/nextjs.svg",
   },
   {
     id: uuidv4(),
     title: "React",
-    icon: "https://thesvg.org/icons/react/default.svg",
+    icon: "/icons/react.svg",
   },
   {
     id: uuidv4(),
     title: "JavaScript",
-    icon: "https://thesvg.org/icons/javascript/default.svg",
+    icon: "/icons/javascript.svg",
   },
   {
     id: uuidv4(),
     title: "TypeScript",
-    icon: "https://thesvg.org/icons/typescript/default.svg",
+    icon: "/icons/typescript.svg",
   },
   {
     id: uuidv4(),
     title: "Git",
-    icon: "https://thesvg.org/icons/git/default.svg",
+    icon: "/icons/git.svg",
   },
   {
     id: uuidv4(),
     title: "GitHub",
-    icon: "https://thesvg.org/icons/github/dark.svg",
+    icon: "/icons/github.svg",
   },
   {
     id: uuidv4(),
     title: "Axios",
-    icon: "https://thesvg.org/icons/axios/default.svg",
+    icon: "/icons/axios.svg",
   },
   {
     id: uuidv4(),
     title: "Supabase",
-    icon: "https://thesvg.org/icons/supabase/default.svg",
+    icon: "/icons/supabase.svg",
   },
   {
     id: uuidv4(),
     title: "Redux",
-    icon: "https://thesvg.org/icons/redux/default.svg",
+    icon: "/icons/redux.svg",
   },
   {
     id: uuidv4(),
     title: "Zod",
-    icon: "https://thesvg.org/icons/zod/default.svg",
+    icon: "/icons/zod.svg",
   },
   {
     id: uuidv4(),
     title: "React Hook Form",
-    icon: "https://thesvg.org/icons/react-hook-form/default.svg",
+    icon: "/icons/react-hook-form.svg",
   },
   {
     id: uuidv4(),
     title: "TanStack",
-    icon: "https://thesvg.org/icons/tanstack/default.svg",
+    icon: "/icons/tanstack.svg",
   },
 ];
 
@@ -74,25 +74,25 @@ export const socialMedia = [
   {
     id: uuidv4(),
     title: "LinkedIn",
-    icon: "https://thesvg.org/icons/linkedin/default.svg",
+    icon: "/icons/linkedin.svg",
     href: "https://www.linkedin.com/in/ahmed-mohamed-b54bb336a/",
   },
   {
     id: uuidv4(),
     title: "WhatsApp",
-    icon: "https://thesvg.org/icons/whatsapp/default.svg",
+    icon: "/icons/whatsapp.svg",
     href: "https://wa.me/201013681500",
   },
   {
     id: uuidv4(),
     title: "Gmail",
-    icon: "https://thesvg.org/icons/gmail-2026/default.svg",
+    icon: "/icons/gmail.svg",
     href: "https://mail.google.com/mail/?view=cm&fs=1&to=ahmed.muhamed.tech@gmail.com",
   },
   {
     id: uuidv4(),
     title: "GitHub",
-    icon: "https://thesvg.org/icons/github/dark.svg",
+    icon: "/icons/github.svg",
     href: "https://github.com/ahmed-muhamed-tech",
   },
 ];
