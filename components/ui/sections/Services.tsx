@@ -99,8 +99,8 @@ export default function Services() {
                         isCurrent
                           ? "scale-110 border-primary bg-primary text-foreground shadow-lg shadow-primary"
                           : isComplete
-                            ? "border-primary bg-primary/70 text-foreground"
-                            : "border-border bg-surface text-muted"
+                            ? "border-primary bg-primary/70 text-foreground opacity-70"
+                            : "border-border bg-surface text-muted opacity-25"
                       } text-xs font-bold shadow-lg shadow-primary/30 md:hidden`}
                     >
                       {service.id}
@@ -115,7 +115,21 @@ export default function Services() {
                         <div
                           className={`${isCurrent ? " border-border bg-surface scale-100" : isComplete ? " border-border/70 bg-surface/70 scale-95" : " border-border/20 bg-surface/20 scale-95"} hidden rounded-2xl border p-5 transition-all duration-300 hover:bg-surface-elevated md:block lg:p-6`}
                         >
-                          <ServiceContent service={service} />
+                          <span className="text-xs font-semibold tracking-wider text-primary sm:text-sm">
+                            {service.id}
+                          </span>
+
+                          <h3
+                            className={`mb-2 mt-1 font-syne text-xl font-semibold uppercase ${isCurrent ? "text-foreground" : isComplete ? "text-foreground/70" : "text-foreground/30"} sm:text-2xl lg:text-3xl`}
+                          >
+                            {service.title}
+                          </h3>
+
+                          <p
+                            className={`text-sm leading-6 ${isCurrent ? "text-muted" : isComplete ? "text-muted/70" : "text-muted/30"}   sm:text-base sm:leading-7 lg:text-lg lg:leading-8`}
+                          >
+                            {service.description}
+                          </p>
                         </div>
 
                         <div className="hidden md:block" />
@@ -127,7 +141,21 @@ export default function Services() {
                         <div
                           className={`${isCurrent ? " border-border bg-surface scale-100" : isComplete ? " border-border/70 bg-surface/70 scale-95" : " border-border/20 bg-surface/20 scale-95"} hidden rounded-2xl border p-5 transition-all duration-300 hover:bg-surface-elevated md:block lg:p-6`}
                         >
-                          <ServiceContent service={service} />
+                          <span className="text-xs font-semibold tracking-wider text-primary sm:text-sm">
+                            {service.id}
+                          </span>
+
+                          <h3
+                            className={`mb-2 mt-1 font-syne text-xl font-semibold uppercase ${isCurrent ? "text-foreground" : isComplete ? "text-foreground/70" : "text-foreground/30"} sm:text-2xl lg:text-3xl`}
+                          >
+                            {service.title}
+                          </h3>
+
+                          <p
+                            className={`text-sm leading-6 ${isCurrent ? "text-muted" : isComplete ? "text-muted/70" : "text-muted/30"}   sm:text-base sm:leading-7 lg:text-lg lg:leading-8`}
+                          >
+                            {service.description}
+                          </p>
                         </div>
                       </>
                     )}
@@ -139,7 +167,21 @@ export default function Services() {
                     <div
                       className={`${isCurrent ? " border-border bg-surface scale-100" : isComplete ? " border-border/70 bg-surface/70 scale-95" : " border-border/20 bg-surface/20 scale-95"} col-start-2 rounded-2xl border p-4 transition-all duration-300 hover:bg-surface-elevated sm:p-5 md:hidden`}
                     >
-                      <ServiceContent service={service} />
+                      <span className="text-xs font-semibold tracking-wider text-primary sm:text-sm">
+                        {service.id}
+                      </span>
+
+                      <h3
+                        className={`mb-2 mt-1 font-syne text-xl font-semibold uppercase ${isCurrent ? "text-foreground" : isComplete ? "text-foreground/70" : "text-foreground/30"} sm:text-2xl lg:text-3xl`}
+                      >
+                        {service.title}
+                      </h3>
+
+                      <p
+                        className={`text-sm leading-6 ${isCurrent ? "text-muted" : isComplete ? "text-muted/70" : "text-muted/30"}   sm:text-base sm:leading-7 lg:text-lg lg:leading-8`}
+                      >
+                        {service.description}
+                      </p>
                     </div>
                   </div>
                 );
@@ -149,35 +191,5 @@ export default function Services() {
         </div>
       </div>
     </section>
-  );
-}
-
-/* =========================
-   SERVICE CONTENT
-========================= */
-
-function ServiceContent({
-  service,
-}: {
-  service: {
-    id: string;
-    title: string;
-    description: string;
-  };
-}) {
-  return (
-    <>
-      <span className="text-xs font-semibold tracking-wider text-primary sm:text-sm">
-        {service.id}
-      </span>
-
-      <h3 className="mb-2 mt-1 font-syne text-xl font-semibold uppercase text-foreground sm:text-2xl lg:text-3xl">
-        {service.title}
-      </h3>
-
-      <p className="text-sm leading-6 text-muted sm:text-base sm:leading-7 lg:text-lg lg:leading-8">
-        {service.description}
-      </p>
-    </>
   );
 }
