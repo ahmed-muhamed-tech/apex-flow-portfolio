@@ -8,10 +8,13 @@ import { IoMdClose } from "react-icons/io";
 import { motion } from "motion/react";
 import { duration } from "@/utils/animation";
 import { usePathname } from "next/navigation";
+import { useActiveSection } from "@/hooks/useActiveSection";
 
 export default function Navbar() {
   const [isOpenNav, setIsOpenNav] = useState(false);
   const pathname = usePathname();
+
+  const activeSection = useActiveSection();
 
   const changeStateNav = () => setIsOpenNav(!isOpenNav);
 
@@ -44,7 +47,7 @@ export default function Navbar() {
                   className="py-1 px-2 rounded-md relative group"
                 >
                   <span className="text-foreground text-xl">{label}</span>
-                  <span className="absolute left-0 w-0 group-hover:w-full h-1 bg-primary rounded-md -bottom-1 transition-all duration-200"></span>
+                  <span className={`absolute left-0 w-0 group-hover:w-full ${activeSection === href && "w-full"} h-1 bg-primary rounded-md -bottom-1 transition-all duration-200`}></span>
                 </Link>
               ))}
             </div>
@@ -59,7 +62,7 @@ export default function Navbar() {
                   className="py-1 px-2 rounded-md relative group"
                 >
                   <span className="text-foreground text-xl">{label}</span>
-                  <span className="absolute left-0 w-0 group-hover:w-full h-1 bg-primary rounded-md -bottom-1 transition-all duration-200"></span>
+                  <span className={`absolute left-0 w-0 group-hover:w-full ${activeSection === href && "w-full"} h-1 bg-primary rounded-md -bottom-1 transition-all duration-200`}></span>
                 </Link>
               ))}
             </div>
@@ -73,14 +76,16 @@ export default function Navbar() {
             backgroundHover="bg-primary-hover"
           />
 
-          {pathname === "/" && <button
-            onClick={changeStateNav}
-            className="lg:hidden flex flex-col group gap-2 w-10 md:w-12 lg:w-16 cursor-pointer"
-          >
-            <span className="w-full h-1 lg:h-2 bg-primary rounded-md"></span>
-            <span className="w-[80%] h-1 lg:h-2 bg-primary rounded-md self-end group-hover:w-full transition-all duration-200"></span>
-            <span className="w-[60%] h-1 lg:h-2 bg-primary rounded-md self-end group-hover:w-full transition-all duration-200"></span>
-          </button>}
+          {pathname === "/" && (
+            <button
+              onClick={changeStateNav}
+              className="lg:hidden flex flex-col group gap-2 w-10 md:w-12 lg:w-16 cursor-pointer"
+            >
+              <span className="w-full h-1 lg:h-2 bg-primary rounded-md"></span>
+              <span className="w-[80%] h-1 lg:h-2 bg-primary rounded-md self-end group-hover:w-full transition-all duration-200"></span>
+              <span className="w-[60%] h-1 lg:h-2 bg-primary rounded-md self-end group-hover:w-full transition-all duration-200"></span>
+            </button>
+          )}
         </div>
       </div>
     </motion.nav>
